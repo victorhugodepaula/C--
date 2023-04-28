@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int valores[10];
+    int maior = valores[0], menor = valores[0];
+    
+    // Loop para ler os 10 valores
+    for (int i = 0; i < 10; i++) {
+        cout << "Digite o valor " << i+1 << ": ";
+        cin >> valores[i];
+        
+        // Verifica se o valor inserido � o maior ou menor at� agora
+        if (valores[i] > maior) {
+            maior = valores[i];
+        }
+        if (valores[i] < menor) {
+            menor = valores[i];
+        }
+    }
+    
+    // Imprime o maior e o menor valor
+    cout << "O maior valor e " << maior << endl;
+    cout << "O menor valor e " << menor << endl;
+    
+    return 0;
+}
+
