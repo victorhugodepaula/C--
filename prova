@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int numAlunos;
+
+   cout << "Digite o numero de alunos que serao avaliados: ";
+   cin >> numAlunos;
+
+   for (int i = 1; i <= numAlunos; i++) {
+      float nota1, nota2, nota3, media;
+
+      cout << "Digite as tres notas do aluno " << i << ":" << endl;
+      cin >> nota1 >> nota2 >> nota3;
+
+      media = (nota1 + nota2 + nota3) / 3;
+
+      cout << "M�dia do aluno " << i << ": " << media << endl;
+
+      if (media >= 7) {
+         cout << "Aluno aprovado" << endl;
+      } else {
+         cout << "Aluno reprovado" << endl;
+      }
+
+      cout << endl;
+   }
+
+   return 0;
+}
