@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num, produto = 1;
+
+    cout << "Digite os numeros (digite 0 para sair):" << endl;
+
+    while (true) {
+        cin >> num;
+
+        if (num == 0) {
+            break;
+        }
+
+        produto *= num;
+    }
+
+    cout << "O produto dos numeros digitados e: " << produto << endl;
+
+    return 0;
+}
+
+
