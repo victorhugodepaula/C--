@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float peso, altura, imc;
+    
+    // Recebe o peso e a altura da pessoa
+    cout << "Digite o seu peso em kg: ";
+    cin >> peso;
+    cout << "Digite a sua altura em metros: ";
+    cin >> altura;
+    
+    // Calcula o IMC
+    imc = peso / (altura * altura);
+    
+    // Exibe o resultado do IMC
+    cout << "O seu IMC e: " << imc << endl;
+    
+    return 0;
+}
+
