@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int idade;
+    int jovens = 0;
+    int adultas = 0;
+    int idosas = 0;
+
+    for (int i = 1; i <= 20; i++) {
+        cout << "Digite a idade da pessoa " << i << ": ";
+        cin >> idade;
+        if (idade <= 19) {
+            jovens++;
+        } else if (idade >= 20 && idade <= 59) {
+            adultas++;
+        } else {
+            idosas++;
+        }
+    }
+
+    cout << "Quantidade de jovens: " << jovens << endl;
+    cout << "Quantidade de adultas: " << adultas << endl;
+    cout << "Quantidade de idosas: " << idosas << endl;
+
+    return 0;
+}
+
